@@ -10,12 +10,12 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 @ComponentScan(basePackages = "org.example")
 public class ProjectConfig {
-//    @Bean
-//    public Parrot parrot(){
-//        Parrot parrot = new Parrot();
-//        parrot.setName("pune");
-//        return parrot;
-//    }
+    @Bean("parrot2")
+    public Parrot parrot(){
+        Parrot parrot = new Parrot();
+        parrot.setName("parrot2");
+        return parrot;
+    }
 //    @Bean
 //    @Primary
 //    public Person person(){
