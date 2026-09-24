@@ -1,9 +1,9 @@
-package org.example.config;
+package org.example;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = {"org.example.proxies","org.example.repositories","org.example.service"})
+@ComponentScan(basePackages = "org.example")
 public class ProjectConfig {
 }
