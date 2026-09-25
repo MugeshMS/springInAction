@@ -34,3 +34,7 @@ singleton beans.
   instantiating the beans together with the Spring context unnecessarily occupied a lot of
   memory. For that app, the developers designed most of the beans to be lazily instantiated
   so that the app would create only the necessary instances.
+
+| Singleton Scope | Prototype Scope |
+| :--- | :--- |
+| • Framework associates a name with an **actual object instance**<br>• Every reference returns the **exact same instance**<br>• Creation can happen on **context startup** (eager) or **first request** (lazy)<br>• **Default** bean scope in Spring<br>• **Not recommended** to have mutable attributes (thread-safety risk) | • Framework associates a name with a **type**<br>• Every reference returns a **brand-new instance**<br>• Creation **only occurs on-demand** when explicitly referenced<br>• Must be **explicitly declared** (`@Scope("prototype")`)<br>• Safe to maintain **mutable state** per instance |
