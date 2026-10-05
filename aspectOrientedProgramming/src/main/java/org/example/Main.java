@@ -1,6 +1,7 @@
 package org.example;
 
 
+import org.example.services.CommentService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
@@ -11,7 +12,7 @@ public class Main {
         comment.setAuthor("Mugesh M S");
         comment.setText("Demo Comment");
         var service = context.getBean(CommentService.class);
-        service.publishComment(comment);
+        System.out.println(service.publishComment(comment));
 
     }
 }

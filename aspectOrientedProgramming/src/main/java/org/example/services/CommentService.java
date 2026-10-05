@@ -1,5 +1,6 @@
-package org.example;
+package org.example.services;
 
+import org.example.Comment;
 import org.springframework.stereotype.Service;
 
 import java.util.logging.Logger;
@@ -9,7 +10,9 @@ public class CommentService {
 
     private Logger logger = Logger.getLogger(CommentService.class.getName());
 
-    public void publishComment(Comment comment){
-        logger.info("Publishing Comment : "+comment.getText());
+    public String publishComment(Comment comment){
+
+        logger.info(comment.getText());
+        return "Mugesh";
     }
 }
