@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/aspectOrientedProgramming/pom.xml" />
+        <option value="$PROJECT_DIR$/aopWithCustomAnnotation/pom.xml" />
       </list>
     </option>
   </component>

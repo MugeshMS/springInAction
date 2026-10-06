@@ -11,7 +11,7 @@ public class CommentService {
     private Logger logger = Logger.getLogger(CommentService.class.getName());
 
     public String publishComment(Comment comment){
-
+        logger.info("Inside the publishComment Method");
         logger.info(comment.getText());
         return "Mugesh";
     }
